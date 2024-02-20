@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     max-width: 1024px;
     font-family: "Roboto", sans-serif;
@@ -12,4 +16,20 @@ header{
     height: 50px;
     font-size: 26px;
     font-weight: 600;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #EEEEEE;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 33%;
 }
