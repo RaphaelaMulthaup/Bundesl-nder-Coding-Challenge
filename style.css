@@ -45,26 +45,69 @@ a {
   gap: 4px;
 }
 
-.name{
-    color: #2f2f2f;
+.name {
+  color: #2f2f2f;
 }
 
-.population{
-    color: #9e9e9e;
+.population {
+  color: #9e9e9e;
 }
 
-.hover{
+.hover {
+  cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#lettersFilter {
+  display: flex;
+}
+
+.divLetter {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DDDDDD;
+  margin: 5px;
+}
+
+.divLetter:hover{
     cursor: pointer;
 }
 
-@media (max-width: 800px){
-	.whiteMargin{
-        width: 50%;
-}
+.allBundesländer{
+    height: 30px;
+    width: 148.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDDDDD;
+    margin: 5px;
+    padding: 0 10px;
 }
 
-@media (max-width: 500px){
-	.whiteMargin{
-        width: 100%;
+.allBundesländer:hover{
+    cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .whiteMargin {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .whiteMargin {
+    width: 100%;
+  }
+
+  .filter{
+    justify-content: center;
+  }
 }
